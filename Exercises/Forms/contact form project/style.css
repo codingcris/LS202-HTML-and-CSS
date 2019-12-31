@@ -1,0 +1,70 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+  width: 100%;
+}
+
+dd {
+  margin-left: 0;
+}
+
+dt {
+  margin-bottom: 8px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+label {
+  margin: 0;
+}
+
+fieldset + fieldset {
+  margin: 10px 0;
+}
+
+.partial {
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.half {
+  width: 50%;
+}
+
+.left {
+  padding-right: 5px;
+}
+
+.right {
+  padding-left: 5px;
+}
+
+.four_tenths {
+  width: 40%;
+}
+
+.one_tenth {
+  width: 10%;
+}

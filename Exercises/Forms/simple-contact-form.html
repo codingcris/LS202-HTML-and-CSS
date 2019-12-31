@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple Contact Form</title>
+    <style>
+      form {
+        /* center form on page */
+        margin: 0 auto;
+        width: 400px;
+        /* form outline */
+        padding: 1em;
+        border: 1px solid #CCC;
+        border-radius: 1em;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      form li + li {
+        margin-top: 1em;
+      }
+
+      label {
+        /* uniform size and alignment */
+        display: inline-block;
+        width: 90px;
+        text-align: right;
+      }
+
+      input,
+      textarea {
+        /* ensure consistent font style in text fields */
+        font: 1em sans-serif;
+
+        /* ensure consistent sizes */
+        width: 250px;
+        box-sizing: border-box;
+
+        /* match form field borders */
+        border: 1px solid #999;
+      }
+
+      input:focus,
+      textarea:focus {
+        /* highlight for focused elements */
+        border-color: #000;
+      }
+
+      textarea {
+        vertical-align: top;
+        height: 5em;
+        max-width: 250px;
+      }
+
+      .button {
+        padding-left: 90px;
+      }
+
+      button {
+        margin-left: .5em;
+      }
+
+    </style>
+  </head>
+  <body>
+    <form action="/my-handling-form-page" method="POST">
+      <ul>
+        <li>
+          <label for="name">Name:</label>
+          <input type="text" name="user_name" id="name">
+        </li>
+        <li>
+          <label for="email">Email:</label>
+          <input type="email" name="user_email" id="email">
+        </li>
+        <li>
+          <label for="msg">Message:</label>
+          <textarea name="user_message" id="msg" cols="30" rows="10"></textarea>
+        </li>
+        <li class="button">
+          <button type="submit">Send Your Message</button>
+        </li>
+      </ul>
+    </form>
+  </body>
+</html>

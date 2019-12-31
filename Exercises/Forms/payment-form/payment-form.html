@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Payment Form</title>
+  <link rel="stylesheet" href="payment-form.css"/>
+</head>
+<body>
+  <form>
+    <h1>Payment form</h1>
+    <p>Required fields are followed by <strong><abbr title="required">*</abbr></strong>.</p>
+
+    <section>
+      <h2>Contact Information</h2>
+      <fieldset>
+        <legend>Title</legend>
+        <ul>
+          <li>
+            <input type="radio" name="title" value="Mister" id="mr">
+            <label for="mr">Mister</label>
+          </li>
+          <li>
+            <input type="radio" name="title" value="Miss" id="ms">
+            <label for="ms">Miss</label>
+          </li>
+        </ul>
+      </fieldset>
+      <p>
+        <label for="name">
+          <span>Name:</span>
+          <strong><abbr title="required">*</abbr></strong>
+        </label>
+        <input type="text" name="user_name" id="name">
+      </p>
+      <p>
+        <label for="email">
+          <span>E-mail:</span>
+          <strong><abbr title="required">*</abbr></strong>
+        </label>
+        <input type="email" name="user-email" id="email">
+      </p>
+      <p>
+        <label for="pwd">
+          <span>Password:</span>
+          <strong><abbr title="required">*</abbr></strong>
+        </label>
+        <input type="password" name="user_password" id="pwd">
+      </p>
+    </section>
+
+    <section>
+      <h2>Payment Information</h2>
+      <p>
+        <label for="card-type">
+          <span>Card Type:</span>
+        </label>
+        <select name="card-type" id="card-type">
+          <option value="visa">Visa</option>
+          <option value="mc">Master Card</option>
+          <option value="amex">American Express</option>
+        </select>
+      </p>
+     <p>
+      <label for="card-number">
+        <span>Card Number:</span>
+        <strong><abbr title="required">*</abbr></strong>
+      </label>
+      <input type="number" value="card-number" id="card-number">
+     </p>
+     <p>
+       <label for="expiration">
+         <span>Expiration Date:</span>
+         <strong><abbr title="required">*</abbr></strong>
+         <em>formatted as mm/yy</em>
+       </label>
+       <input type="date" id="expiration" name="expiration">
+     </p>
+    </section>
+    <section>
+      <p><button type="submit">Validate the payment</button></p>
+    </section>
+  </form>
+</body>
+</html>
