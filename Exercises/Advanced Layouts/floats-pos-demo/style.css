@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 8px;
+  font: 1rem normal Helvetica, Arial, sans-serif;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+  border: 2px solid grey;
+  padding: 20px;
+}
+
+.example {
+  margin: 20px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* first section (inline) styling */
+
+.bordered {
+  border: 2px dashed black;
+  margin: 20px 40px;
+  padding: 30px;
+  width: 60%;
+}
+
+.inline-width a {
+  color: black
+}
+
+.inline-margins a {
+  color: black;
+  margin: 30px;
+}
+
+.inline-padding a,
+.inline-float a {
+  background-color: green;
+  color: white;
+  padding: 30px 20px;
+}
+
+.inline-float a {
+  float: left;
+  margin: 20px;
+}
+
+.inline-float::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/* second section (block) styling */
+.block-box {
+  background-color: rgb(32, 115, 223);
+  color: white;
+}
+
+.block-box2 {
+  height: 60px;
+  padding: 20px;
+  margin: 20px;
+  background-color: green;
+  color: white;
+}
+
+.block-box3 {
+  width: 90px;
+  background-color: orangered;
+  color: white;
+}
+
+.block-box4 {
+  width: 180px;
+  height: 120px;
+  padding: 20px;
+  margin: 20px;
+  background-color: pink;
+  color: white;
+  overflow: hidden;
+}
+
+.clearfix::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.float-box {
+  background-color: rgb(32, 115, 223);
+  color: white;
+  float: left;
+  border: 1px solid red;
+}
+
+.float-box2 {
+  background-color: orangered;
+  color: white;
+  float: right;
+  border: 1px solid red;
+} 
+
+.float-box3 {
+  width: 40%;
+  padding: 20px 0;
+  background-color: orangered;
+  color: white;
+  text-align: center;
+  float: left;
+}
+
+.float-box4 {
+  width: 50%;
+  padding: 20px 0;
+  background-color: rgb(32, 115, 223);
+  color: white;
+  text-align: center;
+  float: right;
+}
+
+.nav a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  margin: 10px;
+  background-color: rgb(32, 115, 223);
+  color: white;
+}
+
+/* third section (inline-block) styling */
+.inline-block-nav {
+  padding: 30px 50px;
+}
+
+.inline-block-nav a {
+  display: inline-block;
+  text-align: center; 
+  padding: 20px 0;
+  background-color: rgb(32, 115, 223); 
+  color: white;
+  width: 20%;
+}
+
+.inline-block-nav a:first-child,
+.inline-block-nav a:nth-child(2),
+.inline-block-nav a:nth-child(3) {
+  margin-right: 10px;
+}
+
+/* fourth section (floats-pos) styling */
+
+.floats-pos {
+  border-top: 2px dashed black;
+  margin-top: 40px;
+}
+
+.floats-pos h1 {
+  text-align: center;
+}
+
+.float-box5,
+.float-box6 {
+  background-color: orangered;
+  color: white;
+  float: left;
+  width: 50%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.float-box6 {
+  background-color: rgb(32, 115, 223);
+}
+
+.no-float {
+  background-color: green;
+  color: white;
+  clear: both;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* fifth section (pos) styling */
+.fixed, .relative, .absolute {
+  padding: 20px 0;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 40px;
+  left: 20px;
+  width: 200px;
+  background-color: rgb(32, 115, 223);
+}
+
+.relative {
+  position: relative;
+  left: -50px;
+  bottom: -20px;
+  background-color: orangered;
+  width: 300px;
+}
+
+.absolute {
+  position: absolute;
+  bottom: 0;
+  background-color: green;
+  width: 200px;
+}
