@@ -6,9 +6,16 @@ html {
   font-size: 16px;
 }
 
+h1, 
+h2, 
+h3 {
+color: #ce4a4a;
+}
+
 body {
   margin: 8px;
   font: 1rem normal Helvetica, Arial, sans-serif;
+  background-color: white;
 }
 
 .container {
@@ -20,6 +27,10 @@ body {
 
 .example {
   margin: 20px 0;
+}
+
+p {
+  line-height: 2rem;
 }
 
 a {
@@ -176,7 +187,7 @@ a {
   color: white;
   float: left;
   width: 50%;
-  padding: 20px 0;
+  padding: 40px 0;
   text-align: center;
 }
 
@@ -216,9 +227,20 @@ a {
   width: 300px;
 }
 
+/* setting .pos section position to relative for proper .absolute div positioning */
+.pos {
+  position: relative;
+}
+
 .absolute {
   position: absolute;
-  bottom: 0;
+  bottom: 125px;
+  left: 250px;
   background-color: green;
   width: 200px;
+}
+
+/* setting position for .bottom div so that text overlays the .fixed element */
+.bottom  {
+  position: relative;
 }

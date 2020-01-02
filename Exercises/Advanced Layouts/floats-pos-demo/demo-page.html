@@ -31,7 +31,7 @@
       
       <h2>What about padding?</h2>
       <div class="bordered example inline-padding">
-        <a href="#" class>Home</a>
+        <a href="#">Home</a>
         <a href="#">Portfolio</a>
         <a href="#">Contact</a>
       </div>
@@ -114,13 +114,17 @@
       </div>
       <p>Elements that follow a floated element wrap around it. However, we don't want this behavior above, so we applied <code>clear:both</code> property to the third <code>div</code>. There are two other values for <code>clear</code>, <code>left</code> and <code>right</code>, but we typically want <code>both</code>.</p>
       <p>There are other ways to clear floats. One technique is the <strong>clearfix</strong> method:</p>
-      <code>
-        elementName::after {
-        <br>content: " ";
-        <br>display:block;
-        <br>clear: both;
-        <br>}
-      </code>
+      <pre>
+        <code>
+          
+          elementName::after {
+            content: " ";
+            display:block;
+            clear: both;
+          }
+          
+        </code>
+      </pre>
       <p>Here we append the ::after pseudo-element to the parent element's selector.</p>
     </section>
     <section class="pos">
@@ -147,10 +151,12 @@
       <div class="relative">I use relative positioning.</div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non cumque repellat sapiente vitae nihil debitis accusamus, odit, tempore id reiciendis consequatur necessitatibus veritatis, distinctio vel, cum repellendus numquam blanditiis perferendis?</p>
       
-      <h2>Absolute Positioning</h2>
-      <p>Absolute positioning removes an element from the normal page flow and positions it at an absolute position relative to its parent element. If the parent element is the <code>&lt;body&gt;</code> , the position is absolute relative to the complete page.</p>
-      <p>The green box uses absolute positioning.</p>
-      <div class="absolute">I use absolute positioning.</div>
+      <div class="bottom"> 
+        <h2>Absolute Positioning</h2>
+        <p>Absolute positioning removes an element from the normal page flow and positions it at an absolute position relative to its parent element. If the parent element is the <code>&lt;body&gt;</code> , the position is absolute relative to the complete page.</p>
+        <p>The green box uses absolute positioning.</p>
+      </div>
+      <div class="absolute">I use absolute <br> positioning.</div>
     </section>
   </div>
 </body>
