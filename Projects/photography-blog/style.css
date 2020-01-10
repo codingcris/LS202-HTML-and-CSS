@@ -1,0 +1,93 @@
+@import url("tantelik-reset.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: normal 18px 'Roboto Condensed', sans-serif;
+  background: no-repeat linear-gradient(to bottom, #d1dbbd, #fcfff5);
+  color: #3e606f;
+}
+
+body > header {
+  width: 960px;
+  margin: 0 auto;
+  padding: 20px 20px 0;
+  overflow: hidden;
+}
+
+body > header h1 {
+  background: transparent url("icon.png") 0 0 no-repeat;
+  padding: 45px 0 15px 115px;
+  font-size: 36px;
+  font-weight: normal;
+  color: #193441;
+  float: left;
+}
+
+nav {
+  float: right;
+  padding: 75px 0 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  padding: 10px 40px 14px;
+  border-top-right-radius: 9px;
+  border-top-left-radius: 9px;
+  background-color: #fcfff5;
+  text-decoration: none;
+  color: #91aa9d;
+}
+
+.a-active {
+  color: #fcfff5;
+  background-color: #91aa9d;
+}
+
+main {
+  width: 960px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0 5px 5px #b5b5b5;
+  padding: 30px;
+  overflow: hidden;
+}
+
+#masthead {
+  width: 900px;
+}
+
+main h1 {
+  background: none;
+  margin: 40px 0 30px;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+p {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.side-image {
+  float: right;
+  margin-left: 40px;
+  width: 330px;
+}
+
+footer {
+  width: 960px;
+  margin: 0 auto;
+  padding: 15px 0 0 ;
+  font-size: 14px;
+}
