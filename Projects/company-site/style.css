@@ -1,0 +1,107 @@
+@import url("tantelik-reset.css");
+
+html {
+  font: normal 20px "Avenir", "Nunito Sans", Helvetica, Arial, sans-serif;
+}
+
+body {
+  background: #2f2840 url("spacedesign/images/bg_body.gif") 50% 0;
+  padding-top: 135px;
+  text-align: center;
+}
+
+[role="banner"] {
+  padding-bottom: 110px;
+}
+
+li {
+  display: inline;
+}
+
+nav {
+  padding-bottom: 45px;
+}
+
+nav li {
+  padding: 0 36px;
+}
+
+nav a {
+  font-size: 26px;
+  color: #cacaca;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a.active {
+  font-weight: bold;
+  color: #6db9ff;
+}
+
+main {
+  background-color: white;
+  padding-top: 100px;
+}
+
+.column {
+  width: 800px;
+  margin: 0 auto;
+}
+
+article {
+  padding-bottom: 70px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: black;
+  padding-bottom: 30px;
+}
+
+h1::before,
+h1::after {
+  content: "\2022";
+  font-size: 30px;
+  padding: 0 25px;
+}
+
+h2 {
+  color: #3e59b2;
+  font-size: 24px;
+  font-weight: bolder;
+  padding-bottom: 12px;
+}
+
+p {
+  font-weight: 500;
+}
+
+footer {
+  background-color: #e7e7e7;
+  padding: 80px 0;
+  color: #b2b2b2;
+  overflow: hidden;
+}
+
+footer ul {
+  box-sizing: border-box;
+  padding-top: 40px;
+}
+
+footer li {
+  padding: 0 60px;
+}
+
+footer a {
+  display: inline-block;
+  text-indent: -9999px;
+  width: 46px;
+  height: 46px;
+  background: url("spacedesign/images/icons_social-media.png");
+}
+
+.facebook { background: url("spacedesign/images/icons_social-media.png") 0 -46px; }
+.email { background: url("spacedesign/images/icons_social-media.png") 0 -92px; }
+.instagram { background: url("spacedesign/images/icons_social-media.png") 0 100%; }
+
