@@ -44,7 +44,7 @@ main {
 }
 
 .column {
-  width: 800px;
+  width: 1000px;
   margin: 0 auto;
 }
 
@@ -75,6 +75,7 @@ h2 {
 
 p {
   font-weight: 500;
+  padding: 0 125px;
 }
 
 footer {
@@ -105,3 +106,18 @@ footer a {
 .email { background: url("spacedesign/images/icons_social-media.png") 0 -92px; }
 .instagram { background: url("spacedesign/images/icons_social-media.png") 0 100%; }
 
+.projects figure {
+  float: center;
+  padding-bottom: 45px;
+}
+
+.team dl {
+  display: inline-block;
+  padding: 118px 30px 200px;
+}
+
+.team dl a {
+  text-decoration: none;
+  color: #3e59b2;
+  font-size: 24px;
+}
